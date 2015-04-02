@@ -166,6 +166,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503311949086_InitialCreate.cs" />
+    <Compile Include="Migrations\201503311949086_InitialCreate.Designer.cs">
+      <DependentUpon>201503311949086_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504021443431_Initial.cs" />
+    <Compile Include="Migrations\201504021443431_Initial.Designer.cs">
+      <DependentUpon>201504021443431_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504021525066_Rating.cs" />
+    <Compile Include="Migrations\201504021525066_Rating.Designer.cs">
+      <DependentUpon>201504021525066_Rating.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -598,7 +610,17 @@
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503311949086_InitialCreate.resx">
+      <DependentUpon>201503311949086_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504021443431_Initial.resx">
+      <DependentUpon>201504021443431_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504021525066_Rating.resx">
+      <DependentUpon>201504021525066_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
